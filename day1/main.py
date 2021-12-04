@@ -16,7 +16,7 @@ def main():
     print(f"Part 1: {anwser1}")
 
     windows = [sum(data[i:i + 3]) for i in range(len(data) - 2)]
-    part1 = count_increases(windows)
+    part2 = count_increases(windows)
     print(f"Part 2: {answer2}")
 
 if __name__ == '__main__':
