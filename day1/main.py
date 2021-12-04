@@ -12,8 +12,8 @@ def get_window_sums(nums):
     return [nums[i] + nums[i+1] + nums[i+2] for i in range(len(nums) - 2)]
 
 def main():
-    f = open("input", 'r')
-    measurements = [int(x) for x in f.readlines()]
+    with open("input", 'r') as f:
+        measurements = [int(x) for x in f.readlines()]
 
     anwser1 = get_increases(measurements) 
     print(f"Part 1: {anwser1}")
