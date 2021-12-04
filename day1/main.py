@@ -8,7 +8,7 @@ def get_increases(nums):
 
     return sum
     
-def get_windows(nums):
+def get_window_sums(nums):
     return [nums[i] + nums[i+1] + nums[i+2] for i in range(len(nums) - 2)]
 
 def main():
@@ -18,7 +18,7 @@ def main():
     anwser1 = get_increases(measurements) 
     print(f"Part 1: {anwser1}")
 
-    windows = get_windows(measurements)
+    windows = get_window_sums(measurements)
     answer2 = get_increases(windows)
     print(f"Part 2: {answer2}")
 
