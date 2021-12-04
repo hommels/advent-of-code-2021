@@ -3,7 +3,7 @@ import sys
 def get_increases(nums):
     sum = 0
     for i in range(1, len(nums)):
-        if int(nums[i]) > int(nums[i-1]):
+        if nums[i] > nums[i-1]:
             sum += 1
 
     return sum
@@ -13,7 +13,7 @@ def get_windows(nums):
 
 def main():
     f = open("input", 'r')
-    measurements = f.readlines() # [int(x) for x in f.readlines()]
+    measurements = [int(x) for x in f.readlines()]
 
     anwser1 = get_increases(measurements) 
     print(f"Part 1: {anwser1}")
