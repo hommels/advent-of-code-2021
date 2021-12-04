@@ -13,7 +13,7 @@ def get_windows(nums):
 
 def main():
     f = open("input", 'r')
-    measurements = [int(x) for x in f.readlines()]
+    measurements = f.readlines() # [int(x) for x in f.readlines()]
 
     anwser1 = get_increases(measurements) 
     print(f"Part 1: {anwser1}")
