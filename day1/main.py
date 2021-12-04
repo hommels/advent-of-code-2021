@@ -13,11 +13,11 @@ def main():
         data = [int(x) for x in f.readlines()]
 
     part1 = count_increases(data) 
-    print(f"Part 1: {anwser1}")
+    print(f"Part 1: {part1}")
 
     windows = [sum(data[i:i + 3]) for i in range(len(data) - 2)]
     part2 = count_increases(windows)
-    print(f"Part 2: {answer2}")
+    print(f"Part 2: {part2}")
 
 if __name__ == '__main__':
     sys.exit(main())
